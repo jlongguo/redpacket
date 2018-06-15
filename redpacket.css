@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+ul,
+li {
+    text-indent: 0;
+    text-decoration: none;
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: 0
+}
+
+.redpacket .special {
+    list-style: none;
+    position: absolute;
+    animation: scroll 10s linear .2s infinite;
+    transform: perspective(300px) rotateX(35deg);
+    -o-transform: perspective(300px) rotateX(35deg);
+    -webkit-transform: perspective(300px) rotateX(35deg);
+    -moz-transform: perspective(300px) rotateX(35deg);
+    /* box-shadow: 0px 1px 4px 1px saddlebrown; */
+}
+
+.redpacket .special a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.redpacket-main {
+    width: 50px;
+    height: 50px;
+    left: 55%;
+    top: 20%;
+    position: absolute;
+    background: url('./jd_float.png')no-repeat;
+    z-index: 9999;
+}
+
+.redpacket {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* top: 10%;
+    left: 30%; */
+    display: none;
+    background: rgba(0, 0, 0, .2);
+}
+
+.redpacket-mask {
+    width: 650px;
+    height: 350px;
+    position: fixed;
+    top: 10.4%;
+    left: 30%;
+}
+
+.redpacket-wrap {
+    width: 650px;
+    height: 350px;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    animation: shake 1s infinite;
+    -o-animation: shake 1s infinite;
+    -webkit-animation: shake 1s infinite;
+    -moz-animation: shake 1s infinite;
+    background: url('./jd_float.png')no-repeat;
+    z-index: 998;
+}
+
+.firework .special {
+    list-style: none;
+    position: absolute;
+}
+
+.firework .special a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.firework-main {
+    left: 11%;
+    top: 31%;
+    position: absolute;
+    background: url('./tm_float.gif')no-repeat;
+    z-index: 9999;
+}
+
+.firework {
+    width: 650px;
+    height: 350px;
+    position: fixed;
+    top: 55%;
+    left: 44%;
+}
+
+.firework-mask {
+    width: 650px;
+    height: 350px;
+    position: fixed;
+    top: 10.4%;
+    left: 30%;
+}
+
+.firework-wrap {
+    width: 650px;
+    height: 350px;
+    position: fixed;
+    top: 55%;
+    left: 44%;
+    background: url('./tm_float.gif')no-repeat;
+    z-index: 997;
+}
+
+@keyframes scroll {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes shake {
+    0%,
+    40%,
+    50%,
+    100% {
+        -webkit-transform: rotate(0);
+    }
+    10%,
+    30%,
+    70%,
+    90% {
+        -webkit-transform: rotate(-5deg);
+    }
+    20%,
+    60%,
+    80% {
+        -webkit-transform: rotate(5deg);
+    }
+}
